@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  background-color: #1e3a8a;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+.filter {
+  margin: 20px;
+  text-align: center;
+}
+
+.filter form {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.filter form select,
+.filter form button {
+  padding: 7px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+.filter form button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter form button:hover {
+  background-color: #274bb2;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.card {
+  height: 360px;
+  width: 260px;
+  flex-shrink: 0;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card .top {
+  height: 45%;
+  width: 100%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card .bottom {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card .bottom h2 {
+  font-size: 1rem;
+  color: #1e3a8a;
+  line-height: 1.3;
+}
+
+.card .bottom p {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
